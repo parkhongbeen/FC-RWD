@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.red-container{
+    border: 10px solid teal;
+    box-sizing:border-box;
+}
+
+.rwd-iframe{
+    max-width:100%;
+
+}
