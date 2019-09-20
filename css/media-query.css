@@ -1,66 +1,92 @@
 @charset "utf-8";
-
-
+/* 모든 디바이스 */
 *{
-    margin:0;
-    padding:0;
-    list-style:none;
-    font-size: 1em;
-    font-weight:400;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1em;
+  font-weight: 400;
 }
-/* 컨테이너 */
+/* All 컨테이터 */
 .container{
-    background: silver;
-    display:flex;
-    flex-flow:row wrap;
+  background: silver;
+  display: flex;
+  flex-flow: row wrap;
 }
-/* 헤더 */
+/* All 헤더 */
 .header{
-    background: red;
-    height: 10vh;
-    width:100%;
-    order:-1;
+  background: yellow;
+  height: 10vh;
 }
-/* 네이게이션 */
+/* All 내비게이션 */
 .navigation{
-    background: orange;
-    height:10vh;
-    width:100%;
-    order:-1;
+  background: pink;
+  height: 10vh;
 }
-/* 메인컨텐츠 */
+/* All 메인 콘텐츠 */
 .main-content{
-    background: yellow;
-    height:50vh;
-    width:100%;
+  background: skyblue;
+  height: 50vh;
 }
-/* 광고 */
+/* All 광고 */
 .ad{
-    background: rgb(142, 219, 27);
-    height:20vh;
-    width:100%;
-    order:-1;
+  background: orange;
+  height: 20vh;
 }
-/* 푸터 */
+/* All 푸터 */
 .footer{
-    background: blue;
-    height:10vh;
-    width:100%;
+  background: lime;
+  height: 10vh;
 }
-@media screen and (min-width: 801px){
-    /* 컨테이너 */
-    .container{
-        max-width: 1200px;
-        margin:0 auto;
-    }
-    /* 랩탑 메인 컨텐츠 */
-    .main-content{
-        width:80%;
-        order:-1;
-    }
-    /* 랩탑 관고 */
-    .ad{
-        width:20%;
-        order:0;
-    }
+/* 모바일 스타일 */
+@media screen and (max-width: 799px){
+  /* Mobile 헤더 */
+  .header{
+    flex: 1 1 100%;
+    order: -1;
+  }
+  /* Mobile 내비게이션 */
+  .navigation{
+    flex: 1 1 100%;
+    order: -1;
+  }
+  /* Mobile 메인 콘텐츠 */
+  .main-content{
+    height: 50vh;
+    flex: 1 1 100%;
+  }
+  /* 광고 */
+  .ad{
+    flex: 1 1 100%;
+    order: -1;
+  }
+  /* 푸터 */
+  .footer{
+    height: 10vh;
+    flex: 1 1 100%;
+  }
+}
+/* 태블릿 스타일 */
+@media screen and (min-width: 50em){
+  /* 컨테이너 */
+  .container{
+
+  }
+  /* 메인 콘텐츠 */
+  .main-content{
+
+  }
+  /* 광고 */
+  .ad{
+ 
+  }
+}
+
+/* 랩탑 스타일 */
+@media screen and (min-width: 64em){
+  
+}
+/* 와이드 스크린 스타일 */
+@media screen and (min-width: 100em){
+
 }
